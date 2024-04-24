@@ -19,6 +19,8 @@ repositories {
 	mavenCentral()
 }
 
+
+
 dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-actuator")
 	implementation("org.springframework.boot:spring-boot-starter-data-jpa")
@@ -28,6 +30,9 @@ dependencies {
 	implementation("org.jetbrains.kotlin:kotlin-reflect")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testImplementation("org.junit.jupiter:junit-jupiter:5.8.2")/// run unit test check logic on test case business before send to BA
+	testImplementation("com.nhaarman:mockito-kotlin:1.6.0")// demo for test
+
 }
 
 tasks.withType<KotlinCompile> {
